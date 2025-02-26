@@ -46,6 +46,7 @@ jwt_token="${header_payload}.${signature}"
 installations=$(curl -s -H "Authorization: Bearer $jwt_token" -H "Accept: application/vnd.github.v3+json" https://api.github.com/app/installations)
  
 echo "DEBUG installations: $installations"
+echo "DEBUG jwt_token: $jwt_token"
  
 # Encontrar ID de instalación
 installation_id=$(echo "$installations" | jq -r --arg org "$ORGANIZATION" '.[] | select(.account.login == $org) | .id')
