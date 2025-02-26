@@ -7,26 +7,7 @@ on:
       client_id:
         description: 'ID client_id'
         required: true
-      client_secret:
-        description: 'ID client_secret'
-        required: true
-      data_json:
-        description: "Data JSON"
-        required: false
-      ticket_id:
-        description: 'TicketId'
-        required: true
-      environment:
-        description: 'Environment'
-        required: true
-      invoker:
-        description: 'Invoker'
-        required: true
-      requestType:
-        description: 'Request type'
-        required: false
-        default: '01'
- 
+        
   repository_dispatch:
     types: [my_event_type]
  
