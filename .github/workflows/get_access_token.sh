@@ -1,5 +1,3 @@
-#!/bin/bash
- 
 set -o pipefail
  
 # Variables necesarias
@@ -37,7 +35,10 @@ payload=$(echo -n "${payload_json}" | b64enc)
  
 # Firmar el JWT
 header_payload="${header}.${payload}"
-signature=$(echo -n "${header_payload}" | openssl dgst -sha256 -sign <(echo -n "${PRIVATE_KEY}") | b64enc)
+private_key_file=$(mktemp)
+echo -n "${PRIVATE_KEY}" > $private_key_file
+signature=$(echo -n "${header_payload}" | openssl dgst -sha256 -sign $private_key_file | b64enc)
+rm -f $private_key_file
  
 # Crear el JWT
 jwt_token="${header_payload}.${signature}"

@@ -7,7 +7,7 @@ on:
       client_id:
         description: 'ID client_id'
         required: true
-        
+
   repository_dispatch:
     types: [my_event_type]
  
@@ -31,7 +31,34 @@ jobs:
       - name: Obtener Access Token
         env:
           APP_ID: 1159648
-          PRIVATE_KEY: MIIEpAIBAAKCAQEAtqK8oypKTrQ71CeSB3Fxaf9rXe9DQoEsblL8D6C8G6zDmfZo1s9sKteUjincnp9lJfko+UYmxpSTVTdkvluXGblnZ3HrOxJgRn/zbGrOTQYA7IZ/QKiVzJzpBEwcXXyOBtSHg/+AVxWEH72TqzesE89NzxRCDpHoShLEVdbwqssvgKLhz3E6Y8y4unXKe5RVe4WmFrqF2Z5WcYag3wBxuD7lZ+NhlmU9TN4M8JgVlUpTdYIUxckEkMGuu+xTAodNk1pbiDbZv5FzWgFj9+40Vw5NTcF/RsFjr6HtPrIPEZkFgxK4DhD/cC+/mLmsm6mRFSg5EWMcY4K17xO/YLAK7wIDAQABAoIBABgqsItmrS586u3Hzqrtd/Rut+ZWIrBKJ3bxxCjNPBbtZXSaBoVmLQn+PMoS//59WQUNUz6o6bidMGG2Ur5doEDnJ6eoi1fltpedlrhh6aqHgNfLdEs6A5hvquXGrHoyYRjGRqhQxsq/LhyFGWUumLaGV+Vu6M7Ev9gNY614I6B1yTmD6yzbs64Tr0KAgtrj1CBPkkyp43MLIFoCpryv6WM00/9Ho8WXAIiL/IQ9Gqf2T/YagvuX1oAzur6IziGW4Ylhll0B1zJ6CYhVx5zvdHQOzQTkHWDW2ND+OMJS79PbGnAfrGr+b/0udJ9XlzzxjxeikhKzUTCpxL9GXumOgECgYEA2cSAj1OsnytyLSf5PykPNkvn0Esr1QYyEWf3SagnctJ0TjpQYMmDxP7HNfxRwdavJKxqyUbnXdnV5GjOlce14evlnOd6yDmse/ddjQ6UcRhEELaZU2Tq6aGdyFCtRtAXuI/rGpWE5UtpZrC//I5q2gCtkjt/efW3vtugwfyecEkCgYEA1rM+CUDA9dfKFsALNp2wuytZYj1cITnOrm/rj84R1Y91yGTSz1F1c82rj4HyD9w8mnwNjm/9qFtJDBorfWMnvIZcwm/HYVJfoAEPnFlxfS1fG2aLOcixIvOVu93lLCJ5ZbZQ7iypDJD7bmuKqo0uj99wEG+oQZbJatqHqrtEXcCgYBwuFEfX110CmYQT6epdNRl84Zrf2RV6Kk9d6/pqW8vojrUS3323c0ifiNzix3nGuOHR0tUGFEaBRaJZIBX52a8qMow3z/lTLd/B3VfN2DaN8ak5nr28no4vosDO6UP/R3WS+F1C01DwLg386QqRtP+pfdoKSMeY8B4OdmYh+U2QKBgQCi4ilWa8H4wVWYHOpk7Q1/ckvFtDeJHYon3NEhsHznQIdjGNq2Xl51FLvri/JRBg0URrkiLuSKLXclr1T/M5KZ/HWzLYpd01io0yU8wL7Q8PMOnqVRmWiJ07LtbFLJQP5IpCCSEV/PIM8f3oa9DY8dp64lScCB+Yh886b2zUY90QKBgQDPe41qShaExoHwjFztNyCfP0QbAd+gWwwjCRorFtwVNmMad21U9W8x5zUN47HFSv5xJOM8tAMWerE+SSy/uZzfu2OhoOy2ge18pC0qnvG24/esJNX1WQBpd4W5Fgdgmq13bmy3W+Je/hq5tg7RKi+H5TDCkVqI0vvAhYUWRtwYzQ==
+          PRIVATE_KEY: |
+            -----BEGIN RSA PRIVATE KEY-----
+            MIIEpAIBAAKCAQEAtqK8oypKTrQ71CeSB3Fxaf9rXe9DQoEsblL8D6C8G6zDmfZo
+            1s9sKteUjincnp9lJfko+UYmxpSTVTdkvluXGblnZ3HrOxJgRn/zbGrOTQYA7IZ/
+            QKiVzJzpBEwcXXyOBtSHg/+AVxWEH72TqzesE89NzxRCDpHoShLEVdbwqssvgKLh
+            z3E6Y8y4unXKe5RVe4WmFrqF2Z5WcYag3wBxuD7lZ+NhlmU9TN4M8JgVlUpTdYIU
+            xckEkMGuu+xTAodNk1pbiDbZv5FzWgFj9+40Vw5NTcF/RsFjr6HtPrIPEZkFgxK4
+            DhD/cC+/mLmsm6mRFSg5EWMcY4K17xO/YLAK7wIDAQABAoIBABgqsItmrS586u3H
+            zqrtd/Rut+ZWIrBKJ3bxxCjNPBbtZXSaBoVmLQn+PMoS//59WQUNUz6o6bidMGG2
+            Ur5doEDnJ6eoi1fltpedlrhh6aqHgNfLdEs6A5hvquXGrHoyYRjGRqhQxsq/LhyF
+            GWUumLaGV+Vu6M7Ev9gNY614I6B1yTmD+6yzbs64Tr0KAgtrj1CBPkkyp43MLIFo
+            Cpryv6WM00/9Ho8WXAIiL/IQ9Gqf2T/YagvuX1oAzur6IziGW4Ylhll0B1zJ6CYh
+            Vx5zvdHQOzQTkHWDW2ND+OMJS79PbGnAfrGr+b/0udJ9XlzzxjxeikhKzUTCpxL9
+            GXumOgECgYEA2cSAj1OsnytyLSf5PykPNkvn0Esr1QYyEWf3SagnctJ0TjpQYMmD
+            xP7HNfxRwdavJKxqyUbnXdnV5GjOlce14evlnOd6yDmse/ddjQ6UcRhEELaZU2Tq
+            6aGdyFCtRtAXuI/rGpWE5UtpZrC//I5q2gCtkjt/efW3vtugwfyecEkCgYEA1rM+
+            CUDA9dfKFsALNp2wuytZYj1cITnOrm/rj84R1Y91yGTSz1F1c82rj4HyD9w8mnwN
+            jm/9qFtJDBorfWMnvIZcwm/HYVJfoAEPnFlxfS1fG2aLOcixIvOVu93lLCJ5ZbZQ
+            7iypDJD7bmuKqo0uj99wEG8+oQZbJatqHqrtEXcCgYBwuFEfX110CmYQT6epdNRl
+            84Zrf+2RV6Kk9d6/pqW8vojrUS3323c0ifiNzix3nGuOHR0tUGFEaBRaJZIBX52a
+            8qMow3z/lTLd/B3VfN2DaN8ak5nr28no4vosDO6UP/R3WS+F1C01DwLg386QqRtP
+            +pfdoKSMeY8B4OdmYh+U2QKBgQCi4ilWa8H4wVWYHOpk7Q1/ckvFtDeJHYon3NEh
+            sHznQIdjGNq2Xl51FLvri/JRBg0URrkiLuSKLXclr1T/M5KZ/HWzLYpd01io0yU8
+            wL7Q8PMOnqVRmWiJ07LtbFLJQP5IpCCSEV/PIM8f3oa9DY8dp64lScCB+Yh886b2
+            zUY90QKBgQDPe41qShaExoHwjFztNyCfP0QbAd+gWwwjCRorFtwVNmMad21U9W8x
+            5zUN47HFSv5xJOM8tAMWerE+SSy/uZzfu2OhoOy2ge18pC0qnvG24/esJNX1WQBp
+            d4W5Fgdgmq13bmy3W+Je/hq5tg7RKi+H5TDCkVqI0vvAhYUWRtwYzQ==
+            -----END RSA PRIVATE KEY-----
           ORGANIZATION: F-code-projects
         run: |
           chmod +x ./.github/workflows/get_access_token.sh
